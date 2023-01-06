@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./vendor/normalize.css">
+  <link rel="stylesheet" href="./index.css">
+  <title>Таблица</title>
+</head>
+<body>
+  <table class="table">
+    <thead>
+      <tr class="row row_head">
+        <th class="column column_name-head">Имя</td>
+        <th class="column column_last-name-head">Фамилия</td>
+        <th class="column column_about-head">Описание</td>
+        <th class="column column_eye-color-head">Цвет глаз</td>
+      </tr>
+    </thead>
+    <tbody class="tbody"></tbody>
+  </table>
+  <form class="form" name="form">
+    <input name="firstName" class="input" type="text" minlength="2">
+    <input name="lastName" class="input" type="text" minlength="2">
+    <input name="about" class="input" type="text" minlength="2">
+    <input name="eyeColor" class="input" type="text" minlength="2">
+    <button type="submit">Сохранить</button>
+  </form>
+  <template id="row">
+    <tr class="row">
+      <td class="column column_name">Имя</td>
+      <td class="column column_last-name">Фамилия</td>
+      <td class="column column_about"></td>
+      <td class="column column_eye-color">Цвет глаз</td>
+    </tr>
+  </template>
+  <script src="./data.js"></script>
+  <script src="./index.js"></script>
+</body>
+</html>

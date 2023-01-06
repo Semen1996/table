@@ -1,0 +1,39 @@
+body {
+  max-width: 1280px;
+  display: flex;
+  background-color: #FFF;
+  margin: 0 auto;
+  font-family: 'Arial', 'sans-serif';
+}
+
+.table {
+  width: 50%;
+  border: 1px solid #000;
+  border-collapse: collapse;
+  margin: 100px auto;
+}
+
+.column {
+  border: 1px solid #000;
+  text-align: center;
+}
+
+.column_about {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+.row_head {
+  cursor: pointer;
+}
+
+.form {
+  width: 20%;
+  position: fixed;
+  top: 50%;
+  right: 2%;
+  display: flex;
+  flex-direction: column;
+}
